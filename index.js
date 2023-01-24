@@ -1,9 +1,19 @@
 //Constants
 
-const apikey = "0ae2940da0c6552a7808062696c881e4";
-const apiEndpoint = "https://api.themoviedb.org/3/";
-const imgPath = "https://image.tmdb.org/t/p/original";
-const goog = "AIzaSyDvA_SVyln60WrUSyhfk5xScPthxi1YAeI";
+import {
+  api,
+  apiEnd,
+  imgPa,
+  goo
+} from "./const.js";
+
+
+const apikey = api;
+const apiEndpoint = apiEnd;
+const imgPath = imgPa;
+const goog = goo;
+
+
 
 const apiPaths = {
   fetchAllCategories: `${apiEndpoint}/genre/movie/list?api_key=${apikey}`,
